@@ -44,3 +44,6 @@ IntelliJ Idea Ulitimate版以外の環境を持込む場合も支障はござい
 
 コードで明示的に表現できていない暗黙の業務ルールの発見と、明示的なコード表現にチャレンジしてみます。
 
+## 初期のモデル
+
+![モデル](document/rental-original.png)

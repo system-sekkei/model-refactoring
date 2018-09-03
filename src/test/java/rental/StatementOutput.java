@@ -36,7 +36,7 @@ class StatementOutput {
 
     @Test
     @Disabled("ステートメント出力")
-    void smokeTest() {
+    void output() {
         Customer customer = new Customer("山田") ;
         customer.addRental(newRelease);
         customer.addRental(children);

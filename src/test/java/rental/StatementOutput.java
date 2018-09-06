@@ -11,7 +11,6 @@ class StatementOutput {
     Rental regular;
 
     @BeforeEach
-    @DisplayName("テストデータ準備")
     void setupData() {
         Movie newReleaseMovie = new Movie("新作", Movie.NEW_RELEASE);
         Movie childrenMovie  = new Movie("子供", Movie.CHILDREN);
@@ -24,7 +23,6 @@ class StatementOutput {
 
     String output;
     @BeforeEach
-    @DisplayName("結果データの準備")
     void setupResult() {
         output = "山田様のレンタル明細\n" +
                 "\t新作\t900円\n" +
@@ -35,7 +33,7 @@ class StatementOutput {
     }
 
     @Test
-    @Disabled("ステートメント出力")
+    @DisplayName("ステートメント出力")
     void output() {
         Customer customer = new Customer("山田") ;
         customer.addRental(newRelease);
